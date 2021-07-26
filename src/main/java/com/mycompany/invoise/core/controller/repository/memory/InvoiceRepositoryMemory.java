@@ -1,8 +1,7 @@
-package com.mycompany.invoise.repository.memory;
+package com.mycompany.invoise.core.controller.repository.memory;
 
-import com.mycompany.invoise.entity.Invoice;
-import com.mycompany.invoise.repository.InvoiceRepositoryInterface;
-import org.springframework.stereotype.Repository;
+import com.mycompany.invoise.core.controller.entity.Invoice;
+import com.mycompany.invoise.core.controller.repository.InvoiceRepositoryInterface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,5 +14,10 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
     public void create(Invoice invoice) {
     invoices.add(invoice);
     System.out.println("Invoice add with number"+invoice.getNumber()+"for"+invoice.getCustomerName());
+    }
+
+    @Override
+    public List<Invoice> list() {
+     throw new UnsupportedOperationException();
     }
 }

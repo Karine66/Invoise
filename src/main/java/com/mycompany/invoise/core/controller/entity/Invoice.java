@@ -1,4 +1,4 @@
-package com.mycompany.invoise.entity;
+package com.mycompany.invoise.core.controller.entity;
 
 public class Invoice {
 

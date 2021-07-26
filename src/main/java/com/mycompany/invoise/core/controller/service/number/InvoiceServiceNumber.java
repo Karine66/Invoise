@@ -1,9 +1,10 @@
-package com.mycompany.invoise.service.number;
+package com.mycompany.invoise.core.controller.service.number;
 
-import com.mycompany.invoise.entity.Invoice;
-import com.mycompany.invoise.repository.InvoiceRepositoryInterface;
-import com.mycompany.invoise.service.InvoiceServiceInterface;
-import org.springframework.stereotype.Service;
+import com.mycompany.invoise.core.controller.entity.Invoice;
+import com.mycompany.invoise.core.controller.repository.InvoiceRepositoryInterface;
+import com.mycompany.invoise.core.controller.service.InvoiceServiceInterface;
+
+import java.util.List;
 
 //@Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
@@ -23,5 +24,10 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
     public void createInvoice(Invoice invoice){
         invoice.setNumber(String.valueOf(++lastNumber));
         invoiceRepository.create(invoice);
+    }
+
+    @Override
+    public List<Invoice> getInvoiceList() {
+        return invoiceRepository.list();
     }
 }
