@@ -5,6 +5,16 @@ public class Invoice {
     private String number;
     private String customerName;
 
+    public String getOrderNumber() {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(String orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    private String orderNumber;
+
     public String getNumber() {
         return number;
     }
