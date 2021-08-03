@@ -2,8 +2,25 @@ package com.mycompany.invoise.core.controller.entity;
 
 public class Invoice {
 
+
+
     private String number;
     private String customerName;
+    private String orderNumber;
+
+    public Invoice(String number, String customerName) {
+        this.number = number;
+        this.customerName = customerName;
+    }
+
+    public Invoice(String number, String customerName, String orderNumber) {
+        this.number = number;
+        this.customerName = customerName;
+        this.orderNumber = orderNumber;
+    }
+
+    public Invoice() {
+    }
 
     public String getOrderNumber() {
         return orderNumber;
@@ -12,8 +29,6 @@ public class Invoice {
     public void setOrderNumber(String orderNumber) {
         this.orderNumber = orderNumber;
     }
-
-    private String orderNumber;
 
     public String getNumber() {
         return number;
