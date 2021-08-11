@@ -1,6 +1,6 @@
 package com.mycompany.invoise.core.controller.repository.memory;
 
-import com.mycompany.invoise.core.controller.entity.Invoice;
+import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.controller.repository.InvoiceRepositoryInterface;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
 
     public Invoice save(Invoice invoice) {
     invoices.add(invoice);
-    System.out.println("Invoice add with number"+invoice.getNumber()+"for"+invoice.getCustomerName());
+    System.out.println("Invoice add with number"+invoice.getNumber()+"for"+invoice.getCustomer().getName());
     return invoice;
     }
 

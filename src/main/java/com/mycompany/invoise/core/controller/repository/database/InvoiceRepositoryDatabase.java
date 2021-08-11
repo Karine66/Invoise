@@ -1,16 +1,6 @@
 package com.mycompany.invoise.core.controller.repository.database;
 
-import com.mycompany.invoise.core.controller.entity.Invoice;
-import com.mycompany.invoise.core.controller.repository.InvoiceRepositoryInterface;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
-import org.springframework.stereotype.Repository;
-
-import java.sql.PreparedStatement;
-import java.sql.Statement;
-import java.util.List;
+import com.mycompany.invoise.core.entity.Invoice;
 
 //@Repository
 //public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
