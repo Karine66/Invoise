@@ -6,6 +6,10 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/IdeaProjects/invoise-web/invoise-web/pom.xml" />
+        <option value="$USER_HOME$/IdeaProjects/customer/customer/pom.xml" />
+        <option value="$USER_HOME$/IdeaProjects/invoice/invoice/pom.xml" />
+        <option value="$USER_HOME$/IdeaProjects/product/product/pom.xml" />
+        <option value="$USER_HOME$/IdeaProjects/service-discovery/service-discovery/pom.xml" />
       </list>
     </option>
   </component>
